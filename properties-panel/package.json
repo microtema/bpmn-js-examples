@@ -33,11 +33,17 @@
     "load-grunt-tasks": "~3.5.0"
   },
   "dependencies": {
-    "bpmn-js": "^0.17.0",
+    "bpmn-js": "^0.28.0",
     "bpmn-js-properties-panel": "^0.9",
-    "camunda-bpmn-moddle": "^0.8.1",
-    "diagram-js": "^0.17.0",
+    "camunda-bpmn-moddle": "^0.9.1",
+    "diagram-js": "^0.29.0",
     "jquery": "^2.1.1",
-    "lodash": "^3.0.0"
-  }
+    "lodash": "^4.17.5",
+    "snyk": "^1.88.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
