@@ -32,7 +32,13 @@
     "load-grunt-tasks": "~3.5.0"
   },
   "dependencies": {
-    "bpmn-js": "^0.17.0",
-    "lodash": "^3.0.0"
-  }
+    "bpmn-js": "^0.28.0",
+    "lodash": "^4.17.5",
+    "snyk": "^1.88.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
